@@ -1,0 +1,228 @@
+.step-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  height: 100vh;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg");
+}
+.step-form form{
+  max-width:706px;
+  width: 100%;
+  /* border: 2px solid #000; */
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+  margin: 0 auto;
+  
+}
+.step-form form>div{
+  transform-origin: top;
+  animation: animate 1s;
+}
+.step-form form input{
+  width: 100%;
+  border:1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 20px;
+  margin: 0 0 20px;
+  max-width: 94%;
+}
+.next-pre{
+  display: flex;
+  justify-content: space-between;
+}
+.next-pre .button{
+background-color: #04AA6D;
+color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+border: 2px solid #04AA6D;
+transition: 0.3s;
+}
+.next-pre .button:hover{
+  background-color: transparent;
+  color: #04AA6D;
+}
+h1 {
+  color: #000;
+  text-align: center;
+  margin: 0 0 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.sucess {
+  color: green;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.sucess.error {
+  color: red;
+  margin-bottom: 0;
+}
+.douts li {
+  width: 15px;
+  height: 15px;
+  background: #ddd;
+  margin: 9px 9px;
+  border-radius: 50%;
+  display: block;
+}
+.douts li.active{
+  background-color: #04AA6D;
+}
+.dupticate{
+  background-color: #ddd;
+}
+.dupticate .douts li{
+  background-color: #fff;
+  border:1px solid #04AA6D ;
+}
+.dupticate .douts li.active{
+  background-color: #04AA6D;
+}
+ul.douts{
+  display: flex;
+  justify-content: center;
+}
+.hide{
+  display: none;
+}
+.formActive{
+  display: block;
+}
+
+
+/* sterep */
+.sterep-main{
+  width: 100%;
+  display: flex ;
+  justify-content: center;
+}
+.sterep {
+  margin: 0 auto 30px;
+  padding: 0;
+  list-style: none;
+
+  /* max-width: 900px; */
+}
+.sterep li {
+  float: left;
+  color: #fff;
+  padding: 0 15px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out 0;
+  -moz-transition: all 0.4s ease-in-out 0;
+  -ms-transition: all 0.4s ease-in-out 0;
+  -otransition: all 0.4s ease-in-out 0;
+  transition: all 0.4s ease-in-out 0;
+  transition: 0.3s;
+  min-width: 54px;
+
+}
+.sterep li:hover, .sterep li.active {
+  color: #04AA6D;
+}
+.sterep li:hover span, .sterep li.active span {
+  background: #04AA6D;
+  color: #fff;
+}
+.sterep li:hover::after, .sterep li.active::after {
+  background: #04AA6D;
+  width: 100%;
+}
+.sterep li::before, .sterep li::after {
+  content: "";
+  position: absolute;
+  left: -50%  ;
+  top: 22px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  -webkit-transition: all 0.4s ease-in-out 0;
+  -moz-transition: all 0.4s ease-in-out 0;
+  -ms-transition: all 0.4s ease-in-out 0;
+  -otransition: all 0.4s ease-in-out 0;
+  transition: all 0.4s ease-in-out 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -otransform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.sterep li::after {
+  width: 0;
+}
+.sterep li span {
+  display: block;
+  margin: 0 auto 15px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  background: #fff;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease-in-out 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sterep li:first-child::before, .sterep li:first-child::after {
+  display: none;
+}
+.hobbies-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 40px;
+}
+.hobbies {
+  display: flex;
+  width: auto;
+  padding: 5px 15px;
+  align-items: center;
+}
+
+.hobbies input {
+  width: auto !important;
+  height: auto !important;
+  margin-left: 12px !important;
+  margin-bottom: 0 !important;
+}
+
+li.active.current span {
+  background: rgb(11 78 179);
+}
+.sterep li.current:hover, .sterep li.current{
+  color: rgb(11 78 179) ;
+}
+.sterep li.current:hover::after, .sterep li.active.current::after{
+  background-color: rgb(11 78 179);
+}
+@keyframes animate {
+  from {
+      transform: scale(0, 1);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1, 1);
+      opacity: 1;
+  }
+}
